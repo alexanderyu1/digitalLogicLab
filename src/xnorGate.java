@@ -1,8 +1,8 @@
-public class nandGate {
+public class xnorGate {
     private int _inputA;
     private int _inputB;
 
-    public nandGate() {
+    public xnorGate() {
     }
 
     public void setInputA (int newInputA) {
@@ -25,12 +25,12 @@ public class nandGate {
         }
     }
 
-    public int nand() {
-        if (_inputA == 1 && _inputB == 1) {
-            return 0;
+    public int xnor() {
+        if (_inputA == _inputB) {
+            return 1;
         }
         else {
-            return 1;
+            return 0;
         }
     }
 }

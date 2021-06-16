@@ -1,8 +1,8 @@
-public class nandGate {
+public class xorGate {
     private int _inputA;
     private int _inputB;
 
-    public nandGate() {
+    public xorGate() {
     }
 
     public void setInputA (int newInputA) {
@@ -25,8 +25,8 @@ public class nandGate {
         }
     }
 
-    public int nand() {
-        if (_inputA == 1 && _inputB == 1) {
+    public int xor() {
+        if (_inputA == _inputB) {
             return 0;
         }
         else {
